@@ -1,6 +1,6 @@
-import { LightButton } from "./LightButton";
-import { useScrolled } from "./useScrolled";
-import { Button } from "./Button";
+import { LightButton } from "../LightButton";
+import { useScrolled } from "../utilis/useScrolled";
+import { Button } from "../Button";
 
 export function FullMenu(){
     const scrolled = useScrolled();

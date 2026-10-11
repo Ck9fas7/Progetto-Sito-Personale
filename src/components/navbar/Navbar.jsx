@@ -1,4 +1,4 @@
-import { useMediaQuery } from "./useMediaQuery";
+import { useMediaQuery } from "../utilis/useMediaQuery";
 import { FullMenu } from "./FullMenu";
 import { HamburgerMenu } from "./HamburgerMenu";
 

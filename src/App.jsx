@@ -5,7 +5,7 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import { Button } from './components/Button'
 import { LightButton } from './components/LightButton'
-import { NavBar } from './components/Navbar'
+import { NavBar } from './components/navbar/Navbar'
 
 function App() {
   const [count, setCount] = useState(0)

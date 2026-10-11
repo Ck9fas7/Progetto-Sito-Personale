@@ -1,6 +1,6 @@
-import { LightButton } from "./LightButton";
-import { Button } from "./Button";
-import { useScrolled } from "./useScrolled";
+import { LightButton } from "../LightButton";
+import { Button } from "../Button";
+import { useScrolled } from "../utilis/useScrolled"
 import React, { useState, useRef } from 'react';
 import {Burger} from "./Burger";
 import {Menu} from "./Menu";
