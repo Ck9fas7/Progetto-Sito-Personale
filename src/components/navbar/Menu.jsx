@@ -11,7 +11,7 @@ export function Menu({ open }) {
         <a href="#howwork">Come Lavoro</a>
         <a href="#servizi">Servizi</a>
         <div className="menu-actions">
-            <Button message="Scrivimi"/>
+            <Button message="Scrivimi" href={"#contatti"}/>
         </div>
     </nav>
   );

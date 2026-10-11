@@ -15,7 +15,7 @@ export function FullMenu(){
                     <a href="#servizi">Servizi</a>
                 </div>
                 <div className="navbar-actions">
-                    <Button message="Scrivimi"/>
+                    <Button message="Scrivimi" href={"#contatti"}/>
                     <LightButton/>
                 </div>
             </div>    

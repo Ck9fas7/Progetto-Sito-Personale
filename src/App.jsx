@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
-import { Button } from './components/Button'
-import { LightButton } from './components/LightButton'
+import { useState } from 'react'
 import { NavBar } from './components/navbar/Navbar'
+import { Hero } from './components/hero/Hero'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -17,7 +13,10 @@ function App() {
           <NavBar/>
         </div>
       </section>
-      <section id="spacer"></section>
+      <div>
+        <Hero/>
+      </div>
+      <section className="spacer"></section>
     </>
   )
 }
