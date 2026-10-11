@@ -1,5 +1,6 @@
 import { Handler } from './Handler'
 import { Draggable } from '../../utilis/useDragg'
+import './box.css'
  
 export function Box (){
     const { pos, bind, ref } = Draggable();

@@ -1,4 +1,4 @@
-import {Draggable} from '../../utilis/useDragg'
+import './handler.css'
 
 export function Handler ({pos}){
     return (

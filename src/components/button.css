@@ -1,0 +1,35 @@
+.cta-btn {
+  display: inline-flex;
+  background:var(--color-background);
+  color:var(--pill-text);
+  text-decoration:none;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-weight:500;
+  padding: 12px 24px;
+  border-radius:10px
+}
+
+.cta-btn a {
+  text-decoration: none;
+  font-size: medium;
+  color: var(--pill-text);
+}
+
+.cta-btn:hover{
+  background-color: var(--color-hover-background);
+}
+
+.imageContainer{
+    position:relative;
+    width:36px; height:36px; padding:0;
+    border:none;
+    background: transparent;
+}
+
+.imageContainer:hover{
+  border-radius: 10px;
+  padding:  5px;
+  background-color: var(--color-bg-hover);
+}

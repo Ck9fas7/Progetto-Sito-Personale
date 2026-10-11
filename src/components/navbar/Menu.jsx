@@ -1,7 +1,7 @@
-// src/components/Menu/Menu.js
 import React from 'react';
 import { Button } from '../Button';
 import { bool } from 'prop-types';
+import './menu.css'
 
 export function Menu({ open }) {
   return (

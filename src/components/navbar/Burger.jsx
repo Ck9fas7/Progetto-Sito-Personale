@@ -1,5 +1,6 @@
 import React from 'react';
 import { bool, func } from 'prop-types';
+import './burger.css'
 
 export function Burger({ open, setOpen }) {
   return (

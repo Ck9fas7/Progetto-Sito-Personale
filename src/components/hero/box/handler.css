@@ -1,0 +1,25 @@
+.handle{
+  position:absolute;
+  top:0; bottom:0;
+  left:var(--pos,50%);
+  width:4px;
+  margin-left:-1px;       
+  background:transparent;      
+  z-index:3;               
+}
+
+.handle span {
+  content:"↔";
+  position:absolute;
+  top: 45%; left:50%;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  margin: -1px;
+  width:40px; height:40px;
+  border-radius:50%;
+  border: 2px solid var(--strong-text);
+  color:var(--strong-text);
+  display:grid;
+  place-items:center;
+  font-size:18px;
+}

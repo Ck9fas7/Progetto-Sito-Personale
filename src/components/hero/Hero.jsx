@@ -1,5 +1,6 @@
 import { Button } from "../Button"
 import { Box } from "./box/Box"
+import './hero.css'
 
 export function Hero (){
 

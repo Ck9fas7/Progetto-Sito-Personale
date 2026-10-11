@@ -1,0 +1,124 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    gap: 6rem;
+    text-align: left;                 
+    padding: calc(var(--navbar-height, 4rem) + 2rem) 5vw 2rem;
+    min-height: 90vh;
+    background: var(--bg);
+    background-image:
+  linear-gradient(
+    to bottom,
+    var(--bg) 0%,
+    rgba(255, 255, 255, 0) 15%,
+    rgba(255, 255, 255, 0) 85%,
+    var(--bg) 100%
+  ),
+ 
+  radial-gradient(ellipse 55% 35% at 20% 30%, rgba(70, 90, 242, 0.75), transparent 100%),
+  radial-gradient(ellipse 50% 40% at 80% 40%, rgba(212, 249, 0, 0.75), transparent 100%),
+  radial-gradient(ellipse 60% 30% at 50% 70%, rgba(141, 229, 100, 0.75), transparent 100%);
+    
+    background-size: 100% 100%, 120% 120%, 120% 120%;
+    background-repeat: no-repeat;
+    background-position: 0 0, 0% 0%, 100% 0%;
+    animation: wave 5s ease-in-out infinite alternate;
+    overflow-x: hidden; 
+    backdrop-filter: blur(40px);
+}
+
+@keyframes wave {
+  0% {
+    background-position: 
+    0 0, 
+    0% 0%, 
+    100% 20%, 
+    30% 100%;
+  }
+  50% {
+    background-position: 0 0, 40% 50%, 70% 0%, 80% 60%;
+  }
+  100% {
+    background-position: 0 0, 10% 90%, 100% 80%, 10% 0%;
+  }
+}
+
+.hero-text {
+  flex: 1 1 0;
+  max-width: 40rem;
+}
+
+.hero-text h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--strong-text);
+  text-wrap: balance;
+}
+
+.hero-text p {
+  margin: 0 0 2rem;                
+  max-width: 34rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color:var(--text);
+}
+
+.hero-text-button{
+  display: flex;   
+  gap: 32px;              
+  flex-wrap: wrap;
+}
+.hero-text-button .cta-btn{
+    display: inline-block; 
+    font-size: 1.25rem;    
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero {
+    animation: none;
+  }
+}
+
+@media (max-width: 815px) {
+.hero {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    overflow: hidden;
+     background-position: center;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 5px;              
+    flex-wrap: wrap;
+    flex: none;                    
+    max-width: 100%;
+  }
+
+  .hero-box {
+    flex: none;
+    margin-left: auto;   
+    margin-right: auto;
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;   
+    margin: 0;          
+  }
+}
