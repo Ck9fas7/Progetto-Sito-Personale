@@ -4,15 +4,14 @@ import './box.css'
  
 export function Box (){
     const { pos, bind, ref } = Draggable();
-    console.log(pos)
     return(
     <>
     <div className="box" 
         style={{ '--pos': `${pos}%` }}
         ref={ref} 
         {...bind}>
-        <div className="layer base">ffjshdfisdhgfihdsfhdskfshdifhsk</div>
-        <div className="layer top">fouad non dsadfsadsadasdadasd</div>
+        <div className="layer base">iodsjfodifdsgsdfsdgsdsa</div>
+        <div className="layer top">fdsjhdshdsuiahdswuah</div>
         <Handler pos={pos}/>
     </div>
     </>
