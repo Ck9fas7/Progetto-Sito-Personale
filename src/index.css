@@ -89,6 +89,10 @@ html{
   width: 100%;
 }
 
+.sep{
+  height: 10000px;
+}
+
 @media (max-width: 815px) {
   html{
   font-size: medium;

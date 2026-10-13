@@ -1,0 +1,41 @@
+.steps{
+    counter-reset:s;
+    display:grid;
+    gap:0;
+    width: 100%;
+    padding: 0 10vw 0
+}
+.steps div{
+    counter-increment:s;
+    display:grid;
+    grid-template-columns:48px 1fr;
+    gap:16px;padding:20px 0;
+    border-top:1px solid var(--st)
+}
+.steps div:before{
+    content: counter(s);
+    width: clamp(1.5rem, 5vw, 2rem);
+    aspect-ratio: 1;        /* Forza il rapporto 1:1 (quadrato/cerchio perfetto) */
+    border-radius: 50%;
+    background: var(--color-background);
+    color: var(--pill-text);
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+.steps h3{
+    font-size: clamp(0.5rem, 1.5rem, 2.5rem);
+    font-weight: 750;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--strong-text);
+    text-wrap: balance;
+    padding-bottom: 1vh;
+}
+.steps p{              
+    max-width: 34rem;
+    font-size: 1.10rem;
+    line-height: 1.7;
+    color: var(--text);
+}

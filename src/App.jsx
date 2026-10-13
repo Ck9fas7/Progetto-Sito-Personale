@@ -3,10 +3,16 @@ import { useState } from 'react'
 import { NavBar } from './components/navbar/Navbar'
 import { Hero } from './components/hero/Hero'
 import { Card } from './components/card/Card'
+import { Step } from './components/step/Step'
+import { Separetor_animated } from './components/separetor/Separetor_animated'
 
 function App() {
-  
+  const stepDict = {
+    "Ci parliamo":"Prezzo fisso e tempi chiari, scritti nero su bianco.",
+    "Costruisco il sito":"Vedi l'anteprima online mentre procedo e mi dici cosa cambiare.",
+    "Pubblico e resto a disposizione":"Il sito va online e puoi contare su assistenza entro 24 ore.",
 
+  }
   return (
     <>
       <section id="center">
@@ -33,7 +39,18 @@ function App() {
           </div>
         </div>
       </section>
-      sep
+      <section id="howwork">
+        <div className="container">
+          <div className='head-container'>
+            <h2><b>Come lavoriamo insieme</b></h2>
+            <p className="lead">Quattro passaggi, nessuna sorpresa.</p>
+          </div>
+          <Step Step={stepDict}/>
+        </div>
+      </section>
+      
+      <Separetor_animated text={"Frase chatchy!  ."}/>
+      <select className='sep'></select>
     </>
   )
 }

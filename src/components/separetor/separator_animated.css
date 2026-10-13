@@ -1,0 +1,5 @@
+.text-animated{
+    fill:var(--strong-text);
+    font-size: clamp(2.5rem, 3vw, 2.5rem);
+    font-weight: 700;
+}
