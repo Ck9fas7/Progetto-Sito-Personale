@@ -1,17 +1,18 @@
 import './App.css'
-import { useState } from 'react'
+
 import { NavBar } from './components/navbar/Navbar'
 import { Hero } from './components/hero/Hero'
 import { Card } from './components/card/Card'
 import { Step } from './components/step/Step'
 import { Separetor_animated } from './components/separetor/Separetor_animated'
+import { Immage } from './components/Immage'
+import { Project } from './components/project/Project'
 
 function App() {
   const stepDict = {
     "Ci parliamo":"Prezzo fisso e tempi chiari, scritti nero su bianco.",
     "Costruisco il sito":"Vedi l'anteprima online mentre procedo e mi dici cosa cambiare.",
     "Pubblico e resto a disposizione":"Il sito va online e puoi contare su assistenza entro 24 ore.",
-
   }
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
         <Hero/>
       </div>
       <section id="servizi">
-        <div className='container'>
+        <div className='container borderdiv'>
           <div className="head-container">
             <h2><b>Cosa posso fare per te</b></h2>
             <p>Dal primo sito al restyling di uno vecchio, fino alla cura quotidiana di tutto ciò che sta dietro.</p>
@@ -50,7 +51,18 @@ function App() {
       </section>
       
       <Separetor_animated text={"Frase chatchy!  ."}/>
-      <select className='sep'></select>
+      
+      <section id="works">
+        <div className='container'>
+          <div className='head-container'>
+            <h2><b>Portofolio</b></h2>
+          </div>
+          <div className='project-container'>
+          </div>
+        </div>
+      </section>
+
+      
     </>
   )
 }

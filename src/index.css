@@ -42,14 +42,19 @@ html{
   background-color: var(--bg);
 }
 
+.borderdiv{
+  border-bottom: 1px solid gray;
+}
+
 .container {
   display: flex;
-  padding: 1rem 5vw 10rem;
+  padding: 4rem 5vw 8rem;
   flex-direction: column;
   align-items: center; 
   width: 100%;
   max-width: none;
-  box-sizing: border-box
+  box-sizing: border-box;
+  
 }
 
 .head-container {
@@ -87,6 +92,11 @@ html{
   text-align: center;     
   padding: 40px 0 20px 0;
   width: 100%;
+}
+
+.project-container{
+  width: 100%;
+  padding: 2rem 10vw 0
 }
 
 .sep{
