@@ -7,6 +7,7 @@ import { Step } from './components/step/Step'
 import { Separetor_animated } from './components/separetor/Separetor_animated'
 import { Project } from './components/project/Project'
 import { ImageMarq } from './components/separetor/Separetor_img'
+import { Footer } from './components/Footer'
 
 function App() {
   const stepDict = {
@@ -83,6 +84,9 @@ function App() {
         </div>
       </div>
     </section>
+
+    
+    <Footer/>
     </>
   )
 }
