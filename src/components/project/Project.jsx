@@ -2,6 +2,7 @@ import { Immage } from '../Immage'
 import { useMediaQuery } from "../utilis/useMediaQuery";
 import fouad1 from '../../assets/PXL_20260530_024417425.jpg'
 import './project.css'
+import '../image.css'
 
 export function Project ({title, img1, desc}) {
     const isMobile = useMediaQuery("(max-width: 815px)");
@@ -12,7 +13,7 @@ export function Project ({title, img1, desc}) {
             <p>{desc}</p>
         </div>
         <div className="project-img">
-            <img className="img-prog" src={fouad1} alt="" />
+            <Immage img={fouad1}/>
         </div>
     </div>
     </> 
@@ -22,8 +23,8 @@ export function Project ({title, img1, desc}) {
         <div className="project-text">
             <h3>{title}</h3>
         </div>
-            <div className="project-img">
-            <img className="img-prog" src={fouad1} alt="" />
+        <div className="project-img">
+            <Immage img={fouad1}/>
         </div>
         <div className="project-text">
             <p>{desc}</p>

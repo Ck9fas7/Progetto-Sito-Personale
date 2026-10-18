@@ -5,8 +5,8 @@ import { Hero } from './components/hero/Hero'
 import { Card } from './components/card/Card'
 import { Step } from './components/step/Step'
 import { Separetor_animated } from './components/separetor/Separetor_animated'
-import { Immage } from './components/Immage'
 import { Project } from './components/project/Project'
+import { ImageMarq } from './components/separetor/Separetor_img'
 
 function App() {
   const stepDict = {
@@ -50,19 +50,25 @@ function App() {
         </div>
       </section>
       
-      <Separetor_animated text={"Frase chatchy!  ."}/>
+      <div className='separetor'>
+        <Separetor_animated text={"Frase chatchy!  ."}/>
+      </div>
+      
       
       <section id="works">
         <div className='container'>
           <div className='head-container'>
-            <h2><b>Portofolio</b></h2>
+            <h2><b>Portfolio</b></h2>
           </div>
           <div className='project-container'>
+            <Project/>
           </div>
         </div>
       </section>
 
-      
+      <div className='separetor'>
+        <ImageMarq/>
+      </div>
     </>
   )
 }
