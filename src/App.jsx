@@ -44,7 +44,7 @@ function App() {
         <div className="container">
           <div className='head-container'>
             <h2><b>Come lavoriamo insieme</b></h2>
-            <p className="lead">Quattro passaggi, nessuna sorpresa.</p>
+            <p>Quattro passaggi, nessuna sorpresa.</p>
           </div>
           <Step Step={stepDict}/>
         </div>
@@ -69,6 +69,20 @@ function App() {
       <div className='separetor'>
         <ImageMarq/>
       </div>
+
+      <section id="price">
+        <div className="container">
+          <div className='head-container'>
+            <h2><b>Pacchetti</b></h2>
+            <p>Prezzi indicativi, da contrattare.</p>
+          </div>
+          
+          <div className="grid">
+              <Card title="Vetrina" price="9.9 €" desc="Un sito adatto sia per smartphone che per PC,Domionio e hosting configurati,Blog o catalogo prodotti,3 mesi di assistenza inclusi" type={true}/>
+              <Card title="Restyling" price="9.9 €" desc="Un sito adatto sia per smartphone che per PC,Domionio e hosting configurati" type={true}/>
+        </div>
+      </div>
+    </section>
     </>
   )
 }

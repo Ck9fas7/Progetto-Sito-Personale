@@ -20,4 +20,4 @@ export function Button({message, img, href,alt,onClick}){
             }
         </>
     )
-}
+} 

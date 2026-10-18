@@ -36,7 +36,6 @@ export function ImageMarquee({ images }) {
   const pathLen = 1.2 * W;  
   const GAP = IMG_SIZE * pithc;
   const count = Math.max(1, Math.round(pathLen / GAP));
-  console.log(count, GAP, pathLen)
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }}>
