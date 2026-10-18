@@ -1,10 +1,12 @@
 import { useId, useRef } from "react";
 import { useViewportWidth } from "./windowsWidth";
 import { usePathLength } from "../utilis/usePathLenght";
+import {useMediaQuery} from "./useMediaQuery"
 
 
 const DURATION = 20;
-const GAP = 275;
+let ratio = 0.1;
+let pithc = 2;
 
 
 const [p0, p1, p2, p3] = [
@@ -15,20 +17,26 @@ const [p0, p1, p2, p3] = [
 ];
 
 export function ImageMarquee({ images }) {
-  console.log(images)
+  const isMobile = useMediaQuery("(max-width: 440px)");
+  if (!isMobile) {
+    ratio=0.05;
+    pithc=3;
+  }
   const pathId = `curve-${useId().replace(/:/g, "")}`;
   const pathRef = useRef(null);
 
   const vw = useViewportWidth();
-  const W = Math.min(1200, Math.max(500, vw));
-  const IMG_SIZE = Math.min(40, Math.max(50, W * 0.1));
-  const H = IMG_SIZE * 1.2;
+  const W = Math.min(1200,  vw);
+  const IMG_SIZE = W * ratio;
+  
+  const H = IMG_SIZE * 1.1;
 
-  const Y = H / 2;
-  const d = `M ${-0.1 * W},${Y} L ${1.1 * W},${Y}`;
+  const d = `M ${-0.1 * W},${H/2} L ${1.1 * W},${H/2}`;
 
-  const pathLen = usePathLength(pathRef, W);
-  const count = Math.ceil(pathLen / GAP) + 1;
+  const pathLen = 1.2 * W;  
+  const GAP = IMG_SIZE * pithc;
+  const count = Math.max(1, Math.round(pathLen / GAP));
+  console.log(count, GAP, pathLen)
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }}>
@@ -43,6 +51,7 @@ export function ImageMarquee({ images }) {
           height={IMG_SIZE}
           x={-H / 2}
           y={-H / 2}
+          preserveAspectRatio="xMidYMid meet"
         >
           <animateMotion
             dur={`${DURATION}s`}
