@@ -11,8 +11,8 @@ export function Footer() {
           <div className="footer-brand">
             <a href="/" className="footer-logo">Davide Ciaramidaro</a>
             <div className="footer-social">
-              <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-              <a href="#" aria-label="Instagram"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/davide-ciaramidaro-58271a2a7/?isSelfProfile=true" aria-label="LinkedIn"><FaLinkedin /></a>
+              <a href="https://github.com/Ck9fas7" aria-label="GitHub"><FaGithub /></a>
             </div>
           </div>
 
@@ -20,8 +20,8 @@ export function Footer() {
             <h3>Navigazione</h3>
             <ul>
               <li><a href="#servizi">Servizi</a></li>
-              <li><a href="#works">Portfolio</a></li>
               <li><a href="#howwork">Come Lavoro</a></li>
+              <li><a href="#works">Portfolio</a></li>
               <li><a href="#price">Pacchetti</a></li>
             </ul>
           </nav>

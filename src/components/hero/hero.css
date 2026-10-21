@@ -51,7 +51,7 @@
 
 .hero-text h1 {
   margin: 0 0 1.5rem;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 10vw, 5.5rem);
   font-weight: 800;
   line-height: 1.08;
   letter-spacing: -0.03em;
@@ -59,10 +59,18 @@
   text-wrap: balance;
 }
 
+.hero-text h1 span {
+  background: linear-gradient(90deg,var(--gradient-color1), var(--gradient-color2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .hero-text p {
   margin: 0 0 2rem;                
   max-width: 34rem;
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   line-height: 1.7;
   color:var(--text);
 }

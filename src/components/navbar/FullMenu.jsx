@@ -10,9 +10,9 @@ export function FullMenu(){
                 <b>Davide Ciaramdiaro</b>
                 <div className="navbar-pill">
                     <a href="#servizi">Servizi</a>
-                    <a href="#works">Portfolio</a>
                     <a href="#howwork">Come Lavoro</a>
-                    <a href="#servizi">Servizi</a>
+                    <a href="#works">Portfolio</a>
+                    <a href="#price">Pacchetti</a>
                 </div>
                 <div className="navbar-actions">
                     <Button message="Scrivimi" href={"#contatti"}/>

@@ -6,6 +6,8 @@
     --bg:#dde9fb;
     --pill-text:#F1F5F9;
     --strong-text:#0F172A;
+    --gradient-color1:#38BDF8;
+    --gradient-color2:#4F46E5;
     --text:#64748B;
     --color-background:#0051ff;
     --sttext-color-bg:#F1F5F9;
@@ -21,6 +23,8 @@
     --bg:#0F172A;
     --pill-text:#F1F5F9;
     --strong-text:#F1F5F9;
+    --gradient-color1:#FDE68A;
+    --gradient-color2:#FB923C;
     --text:#94A3B8;
     --color-background:#38BDF8;
     --sttext-color-bg:#0F172A;
@@ -40,7 +44,7 @@ html{
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: large;
+  font-size: larger;
   background-color: var(--bg);
   scroll-behavior: smooth;
 }

@@ -52,7 +52,7 @@ function App() {
       </section>
       
       <div className='separetor'>
-        <Separetor_animated text={"Frase chatchy!  ."}/>
+        <Separetor_animated text={"Diamo forma alle tue idee.      "}/>
       </div>
       
       
@@ -79,8 +79,11 @@ function App() {
           </div>
           
           <div className="grid">
-              <Card title="Vetrina" price="9.9 €" desc="Un sito adatto sia per smartphone che per PC,Domionio e hosting configurati,Blog o catalogo prodotti,3 mesi di assistenza inclusi" type={true}/>
-              <Card title="Restyling" price="9.9 €" desc="Un sito adatto sia per smartphone che per PC,Domionio e hosting configurati" type={true}/>
+              <Card title="Vetrina" price="400 €" desc="Un sito adatto sia per smartphone che per PC,Fino a 5 pagine,Sito responsive,Domionio e hosting configurati,Blog o catalogo prodotti,3 mesi di assistenza inclusi,SEO di base" type={true}/>
+              <Card title="Restyling" price="200 €" desc="Nuovo design con struttura e contenuti invariati,Migliorie SEO e performance, " type={true}/>
+              <Card title="Modifiche" price="20 €" period="/h" desc="Cambio testi o immagini,Nuova pagina,Correzioni grafiche,Aggiornamento di prezzi e contatti" type={true}/>
+              <Card title="Manutenzione" price="40 €" period="/mese" desc="Backup,Monitoraggio online del sito,Report mensile su visite e prestazioni," type={true}/>
+              
         </div>
       </div>
     </section>

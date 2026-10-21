@@ -20,6 +20,11 @@
     padding: 1.5rem 0 2rem;
 }
 
+.price .pricebuss{
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
 .price h3{
     font-size: clamp(1rem, 1.5rem, 2rem);
     font-weight: 400;

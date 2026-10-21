@@ -1,7 +1,7 @@
 import { Handler } from './Handler'
 import { Draggable } from '../../utilis/useDragg'
-import fouad1 from '../../../assets/PXL_20260530_024417425.jpg'
-import fouad2 from '../../../assets/PXL_20260816_142010259.jpg'
+import imm1 from '../../../assets/imm1.png'
+import imm2 from '../../../assets/imm2.png'
 import './box.css'
  
 export function Box (){
@@ -12,8 +12,8 @@ export function Box (){
         style={{ '--pos': `${pos}%` }}
         ref={ref} 
         {...bind}>
-        <div className="layer base"><img src={fouad1} alt="" /></div>
-        <div className="layer top"><img src={fouad2} alt="" /></div>
+        <div className="layer base"><img src={imm1} alt="" /></div>
+        <div className="layer top"><img src={imm2} alt="" /></div>
         <Handler pos={pos}/>
     </div>
     </>
