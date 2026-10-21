@@ -14,7 +14,9 @@ export function Hero (){
                     <Button message={"Scopri di più"} href={"#howwork"} alt={{ '--bg': `transparent` }}/>
                 </div>
             </div>
-            <Box />
+            <div className="hero-image">
+                <Box />
+            </div>
         </div>
     )
 }

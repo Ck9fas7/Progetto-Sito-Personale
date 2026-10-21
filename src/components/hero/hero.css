@@ -1,8 +1,8 @@
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: center;   
-    gap: 6rem;
+    align-items: center; 
+    justify-content: center;
+    gap: 3rem;
     text-align: left;                 
     padding: calc(var(--navbar-height, 4rem) + 2rem) 5vw 2rem;
     min-height: 90vh;
@@ -28,6 +28,18 @@
     backdrop-filter: blur(40px);
 }
 
+.hero-image{
+  flex: 0 1 50%;
+  min-width: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;      /* evita l'area vuota sotto */
+    display: block;
+    border-radius: 2rem;
+}
+
 @keyframes wave {
   0% {
     background-position: 
@@ -45,7 +57,7 @@
 }
 
 .hero-text {
-  flex: 1 1 0;
+  flex: 0 1 42%;
   max-width: 40rem;
 }
 

@@ -1,9 +1,9 @@
 .box{
   flex: 0 1 auto;
   width: 100%;
-  max-width: 32rem;
-  aspect-ratio: 4 / 3;
-  border-radius: 1.5rem;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  border-radius: 2rem;
   position:relative;
 
   touch-action: none;
